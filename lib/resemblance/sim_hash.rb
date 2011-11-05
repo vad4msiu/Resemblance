@@ -1,4 +1,4 @@
-require "./hashing"
+require "resemblance/hashing"
 
 class SimHash
   MAX_ERROR = 0.5

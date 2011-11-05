@@ -2,7 +2,7 @@ require "resemblance/hashing"
 
 module Resemblance
   class SimHash
-    MAX_ERROR = 0.5
+    MAX_ERROR = 0.1
     FUNCTION_COUNT = (1 / (MAX_ERROR * MAX_ERROR)).round
 
     def initialize shingles = [], options = {}

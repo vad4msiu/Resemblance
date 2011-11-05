@@ -57,7 +57,7 @@ module Resemblance
               if shingle.size == @shingle_length
                 yield(shingle, position_start, position_end - 1)
                 position_start = position_end_words.shift
-                shingling.shift
+                shingle.shift
               end
             end
             char_flag = false

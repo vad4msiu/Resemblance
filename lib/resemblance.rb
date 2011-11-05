@@ -3,6 +3,6 @@ require "resemblance/shingling"
 require "resemblance/sim_hash"
 
 module Resemblance
-  include 'shingling'
-  include 'sim_hash'
+  include Shingling
+  include SimHash
 end

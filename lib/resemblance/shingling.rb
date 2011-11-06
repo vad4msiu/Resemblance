@@ -50,7 +50,7 @@ module Resemblance
           char_flag = true
         else
           if char_flag
-            if !stop_word?(word) || word !~ /\S/
+            if !stop_word?(word) || (word =~ /\S/)
               shingle << (@downcase ? Unicode::downcase(word) : word)
               word = ""
               position_end_words << position_end
